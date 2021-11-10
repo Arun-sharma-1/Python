@@ -32,6 +32,4 @@ center_text("arun sharma ")
 center_text("how it is goint ")
 center_text(12)
 center_text("now i am watching money heist")
- 
-    
     

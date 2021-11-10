@@ -35,3 +35,12 @@ laptop[2]='hp'
 print(laptop)
 a=laptop.get(4,'not found')
 print(a)
+
+
+#HOW TO MODIFY A GLOBAL VARIABLE 
+enemy = 1
+def fn():
+    global enemy
+    enemy+=1
+    return enemy
+print(fn())

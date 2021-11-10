@@ -16,6 +16,13 @@
 
 # print(display)
 
-list=['a','b','a']
-print(list. index('a'))
+# list=['a','b','a']
+# print(list. index('a'))
 # new_letter=alphabelt[new_position]
+
+enemy = 1
+def fn():
+    global enemy
+    enemy+=1
+    return enemy
+print(fn())
