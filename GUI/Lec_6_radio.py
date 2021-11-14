@@ -9,10 +9,13 @@ input_frame = LabelFrame(root, width=350, height=100, text="this is fun")
 output_frame = Frame(root, width=350, height=100 ,bg='green')
 input_frame.pack(padx=10, pady=10)
 output_frame.pack(padx=10, pady=1)
+output_frame.propagate(0)
 
 def printing_no():
     select = 'You selected for option '+ str(number.get())  
     label.config(text = select) #this is used so that we text does not repeat otherwise we can use label method to print 
+    # label = Label(output_frame , text=number.get())
+    # label.pack()
     
 
 # CHECKBOX
@@ -25,7 +28,7 @@ radio_1.grid(row=0,column=0,padx=10,pady=10)
 radio_2.grid(row=0, column=1,padx=10,pady=10)
 print_button.grid(row=1, column=0, columnspan=2, pady=10, padx=10)
 
-label =Label(root)
+label =Label(output_frame)
 label.pack()
 root.mainloop()
 

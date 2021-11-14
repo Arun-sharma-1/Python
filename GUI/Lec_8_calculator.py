@@ -1,0 +1,65 @@
+#simple calculator
+from tkinter import *
+from typing import Collection
+#define root
+root = Tk()
+root.title('Calculator ')
+root.iconbitmap('arun.ico')
+root.geometry('403x325')
+root.resizable(0,0)
+#define widgets
+label_1=Label(root,bg='lightgreen',height=4 ,width=80)
+label_1.pack() 
+label_2=Label(root,height=40,width=70,bg='yellow')
+label_2.pack(side=LEFT,fill=BOTH,expand=True) 
+label_2.pack_propagate(0)
+
+def onclick():
+     label = Label(Entry,text=number.get)
+     print(label)
+def getvalue():
+    print(text)
+
+# defined buttons
+number = IntVar()
+b1=Button(label_2, text='1',padx=50,pady=20,command=getvalue)
+b2=Button(label_2, text='2',padx=50,pady=20)
+b3=Button(label_2, text='3',padx=50,pady=20)
+b4=Button(label_2, text='4',padx=50,pady=20)
+b5=Button(label_2, text='5',padx=50,pady=20)
+b6=Button(label_2, text='6',padx=50,pady=20)
+b7=Button(label_2, text='7',padx=50,pady=20)
+b8=Button(label_2, text='8',padx=50,pady=20)
+b9=Button(label_2, text='9',padx=50,pady=20)
+b0=Button(label_2, text='0',padx=50,pady=20)
+#operations
+op_1=Button(label_2,text='+',padx=20,pady=20)
+op_2=Button(label_2,text='-',padx=20,pady=20)
+op_3=Button(label_2,text='*',padx=20,pady=20)
+op_4=Button(label_2,text='/',padx=20,pady=20)
+
+#packing opertions
+op_1.grid(row=0,column=3)
+op_2.grid(row=1,column=3)
+op_3.grid(row=2,column=3)
+
+ 
+#pack these buttons
+b1.grid(row=2 ,column=0)
+b2.grid(row=2 ,column=1)
+b3.grid(row=2 ,column=2)
+b4.grid(row=1 ,column=0)
+b5.grid(row=1,column=1)
+b6.grid(row=1 ,column=2)
+b7.grid(row=0 ,column=0)
+b8.grid(row=0 ,column=1)
+b9.grid(row=0 ,column=2)
+b0.grid(row=3 ,column=1)
+
+#INPUT FEILD
+e = Entry(label_1, width=35, borderwidth=5 ,textvariable=IntVar)
+e.grid(row=0, column=0, columnspan=3, padx=10, pady=10)
+
+
+
+root.mainloop()

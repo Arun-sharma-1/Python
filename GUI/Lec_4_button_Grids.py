@@ -13,6 +13,11 @@ def Hello():
 # frame.grid(row=0 ,column=0)
 # frame.pack()
 
+def commands():
+    print(number.get())
+     
+number = IntVar()
+number = 3
 
 b1 = Button(root, fg='red', text='click now', command=Hello)
 b1.grid(row=0, column=0, padx=10, pady=10)  # do not apply b1.pack() after grid
@@ -21,7 +26,7 @@ b2 = Button(fg='blue', text='second button', activebackground='lightgreen')
 b2.grid(row=0, column=1)
 
 b2 = Button(fg='blue', text='large button',
-            activebackground='white', bg='black')
+            activebackground='white', bg='black',command=commands)
 b2.grid(row=1, column=0, columnspan=3, sticky='WE', padx=10)
 
 test_1 = Button(text='test')
