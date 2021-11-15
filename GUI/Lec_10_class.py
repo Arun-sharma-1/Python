@@ -78,19 +78,3 @@
 # root.mainloop()
 
 
-#button
-from tkinter import *
-from tkinter import messagebox
-
-root=Tk()
-root.geometry("500x500")
-
-def msg():
-    messagebox.showinfo("Message Window","Restart Your System")
-
-b1=Button(root,text="Hello World",bg="blue",fg="white",command=msg)
-#b1.pack()
-b1.place(x=60,y=100)
- 
-
-root.mainloop()
