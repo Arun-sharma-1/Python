@@ -3,6 +3,7 @@ root = Tk()
 root.geometry('100x90')
 root.title('Listbox')
 #listbox
+
 lb = Listbox(root,width=100,height=90);
 lb.insert(1,'arun');
 lb.insert(2,'ram')
