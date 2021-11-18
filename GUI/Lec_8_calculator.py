@@ -10,6 +10,7 @@ root.resizable(0,0)
 #define widgets
 label_1=Label(root,bg='lightgreen',height=4 ,width=80)
 label_1.pack() 
+
 label_2=Label(root,height=40,width=70,bg='yellow')
 label_2.pack(side=LEFT,fill=BOTH,expand=True) 
 label_2.pack_propagate(0)
