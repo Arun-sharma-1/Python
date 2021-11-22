@@ -26,6 +26,24 @@
 #     enemy+=1
 #     return enemy
 # print(fn())
-import tkinter
-root = tkinter.Tk()
-root.mainloop()
+# import tkinter
+
+# root = tkinter.Tk()
+# root.mainloop()
+import sqlite3
+db = sqlite3.connect('contacts.sqlite')
+db.execute('CREATE TABLE IF NOT EXISTS contacts (name TEXT , phone integer)')
+db.execute('INSERT INTO contacts VALUES("Arun" , 111) ')
+db.execute('INSERT INTO contacts VALUES("SOMEONE" , 222) ')
+
+
+cursor  = db.cursor()
+cursor.execute('select * from contacts')
+for name ,phone in cursor:
+    print(name)
+    print(phone)
+    print('-'*20)
+cursor.close()
+# db.execute('drop table contacts')
+
+db.close()
