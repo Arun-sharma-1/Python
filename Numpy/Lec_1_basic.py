@@ -5,7 +5,7 @@ from numpy.lib.index_tricks import AxisConcatenator
 # DEFINE ARRAY
 a = np.array([1, 2, 3, 4, 5])
 b = np.array([[1], [11], [111], [1111]])
-# print(a)xx``
+# print(a)
 # print(type(a))
 # print(b[0][0])
 
