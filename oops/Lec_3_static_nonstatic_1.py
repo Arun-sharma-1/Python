@@ -2,12 +2,11 @@ class Test:
     staticvariable=0;
     instancevariable=0
      #class and static variables are same 
-    def __init__(self) -> None:
-        print('Constructing the object of first class')
+    def __init__(self):
+        print('Constructing the object ')
         self.instancevariable+=1;
         Test.staticvariable+=1;
-        self.classvariable+=1;
-
+        
 t1=Test()
 print('After creating 1st object ')
 print('Instance variable: ', t1.instancevariable)

@@ -17,7 +17,7 @@ class Student:
 
 n1 = Name('arun', 'kumar', 'sharma')
 Student1 = Student(1, n1, 'cse')
-Student2 = Student(2, Name('ram', 'kumar', 'sha'), 'ece')
+Student2 = Student(2, Name('ram', 'kumar', 'sha'), 'ece')   
 
 
 # print('Direct :',Student1.Rollno)

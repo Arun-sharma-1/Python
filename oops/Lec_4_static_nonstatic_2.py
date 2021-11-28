@@ -1,3 +1,4 @@
+
 class Employee:
     totalemployee=0
     def __init__(self, empno ,empname, salary,deptno) -> None:
@@ -5,6 +6,7 @@ class Employee:
         self.EmpName=empname
         self.Salary=salary;
         self.Deptno=deptno
+        Employee.totalemployee+=1
     
     def show_Employee(self):
         print('Employee Name: {} \nEmployee NO: {} \nSalary: {} \nEmplyoee dept: {}\n'.format(self.EmpName ,self.Empno ,self.Salary ,self.Deptno))
@@ -18,3 +20,5 @@ list=[emp1,emp2]
 
 for item in list:
     item.show_Employee()
+
+print('Total employee :' , Employee.totalemployee)
