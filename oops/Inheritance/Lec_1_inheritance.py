@@ -1,19 +1,56 @@
-class Emplyoee:
-    def __init__(self,name,salary,deptno) -> None:
-        self.Empname=name 
-        self.Empsalary=salary 
-        self.EmpDeptno=deptno
+# SYNTAX FOR INHERITANCE
+'''class P:
+    def __init__(self) -> None:
+        print('parent class constructor ')
 
-    
-    def show_data(self):
-        print('Empname={}\nEmpsalary={}\nEmpdeptno={}\n'.format(self.Empname ,self.Empsalary, self.EmpDeptno))
-
-class Salesman(Emplyoee):
-    def __init__(self, name, salary, deptno ,comm) -> None:
-        self.commision=comm
-        super().__init__(name, salary, deptno)
+    def m1(self):
+        print('Parent class method ')
 
 
-s=Salesman('arun','1lac',1,20000)
-s.show_data()
-print(s.commision)
+class C(P):
+    def m2(self):
+        print('Child class method ')
+
+
+# c1 = C()
+# c1.m2()
+# c1.m1()
+
+class P:
+    def __init__(self) -> None:
+        print('parent class constructor ')
+
+    def m1(self):
+        print('Parent class method ')
+
+
+class C(P):
+    def m2(self):
+        self.m1()
+        print('Child class method ')
+
+
+# c1 = C()
+# c1.m2()
+# c1.m1()
+'''
+
+# if name of both method become same then in that conditon we us super
+
+
+class P:
+    def __init__(self) -> None:
+        print('parent class constructor ')
+
+    def m1(self):
+        print('Parent class method ')
+
+
+class C(P):
+    def m1(self):
+        super().m1()
+        print('Child class method ')
+
+
+c1 = C()
+c1.m1()

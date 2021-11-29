@@ -16,6 +16,7 @@
 print('-'*40)
 
 
+#FIRST METHOD OF ACCESSING
 class Car:
     def __init__(self, cname, cno, cmodel) -> None:
         self.cname = cname
@@ -38,6 +39,19 @@ class Employee:
         self.car.car_info()
 
 
-C = Car('honda-city', 1234, 2017)
-E1 = Employee('Arun', C)
+# C = Car('honda-city', 1234, 2017)
+E1 = Employee('Arun')
+E1.display_info()
+
+#SECOND METHOD OF ACCESSING
+class Employee:
+    def __init__(self, name) -> None:
+        self.name = name
+        self.car = Car('honda-city', 1234, 2017)
+
+    def display_info(self):
+        print('Employee-Name:{} '.format(self.name))
+        print('Car info : ')
+        self.car.car_info()
+E1 = Employee('Arun')
 E1.display_info()
