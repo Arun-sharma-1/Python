@@ -12,6 +12,18 @@ b = np.array([[1], [11], [111], [1111]])
 # SHAPE OF ARRAY = DIMENSIONS OF ARRAY
 # print(a.shape)
 # print(b.shape)
+# print(b.ndim)
+
+#resize
+r=np.array([[1,2],[3,4]])
+print(r.shape)
+x=np.resize(r,(3,2))
+print("x array is:",x)
+print("shape of x array",x.shape)
+y=np.resize(r,(2,3))
+print("y array is:", y)
+print("shape of array y:",y.shape)
+
 
 # CREATE ZEROS , ONES ,CUSTOM ARRAY
 zero_matrix= np.zeros(3)
@@ -88,3 +100,18 @@ print(B)
 
 #concatenation of array
 print(np.stack((A,B),axis=1))
+
+#arange()
+import numpy as np
+z=np.arange(25)
+print(z)
+#print even numbers from 0 to 10
+x=np.arange(0,11,2)
+print(x)
+#to print numbers from 30 to 1
+v=np.arange(30,0,-1)
+print(v)
+
+i=np.empty([3,2],dtype=int)
+print(i)
+
