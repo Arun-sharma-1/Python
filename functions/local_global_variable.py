@@ -1,21 +1,4 @@
-'''data1=10
-def check():
-    data1=1
-    print(data1)
-    return data1;
-
-def check2():
-    global data1;
-    data1=100
-    print(data1)
-    return data1;
-
-print(data1)
-check()
-check2()
-print(data1)
-
-
+''' 
 a=10
 print(id(a))
 x=globals()['a']  # This will take acces of global variable
@@ -44,3 +27,13 @@ def fn():
     enemy+=1
     return enemy
 print(fn())
+
+#IMPORTANT CONCLUSION ABOUT GLOBAL VARIABLE
+a=77
+def f1():
+    print(a)
+    global a #error
+    a=99
+    print(a)
+
+f1()

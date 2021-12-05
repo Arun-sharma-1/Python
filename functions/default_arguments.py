@@ -20,3 +20,23 @@ add()
 add(10)
 add(10,20)
 add(10,30)
+
+#**KWARGS VARIABLE LENGTH
+def Test(**kwargs):
+    # print(kwargs)
+    for i in kwargs:
+        print(i)
+        print(kwargs[i])
+
+Test()
+Test(a=10,b=20)
+
+def Test(*n ,**kwar):
+    print(n)
+    print(kwar)
+
+Test(10,a=20,b=49)
+
+# def Test(**kwargs,a=10):
+    # print(n)
+    # print(kwargs)
