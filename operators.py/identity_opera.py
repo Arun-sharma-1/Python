@@ -20,6 +20,8 @@ x = ["apple", "banana"]
 y = ["apple", "banana"]
 z = x
 
+print("Here ")
+print(x is y) #Address of both list are not same they are not pointing to same address 
 print(x is z)
 
 # returns True because z is the same object as x
