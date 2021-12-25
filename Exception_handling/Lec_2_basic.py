@@ -2,6 +2,7 @@
 # finally will always execute
 try:
     print('hello world ')
+    # raise Exception
 except:
     print('here error occured ')
 else:
