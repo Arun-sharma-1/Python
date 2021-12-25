@@ -17,5 +17,5 @@ plt.legend()
 plt.grid(True)
 
 
-plt.tight_layout() #to avoid padding when u give linewidth
+plt.tight_layout() #to give some padding 
 plt.show()
