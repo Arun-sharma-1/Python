@@ -3,10 +3,10 @@
 # intro.write("hello man")
 #all the data from file will be delted when program will run and hello man will be printed in the file 
 
-names=['arun','kushal','varun']
-with open('z2.txt','w') as intro:
-    for name in names:
-        print(name,file=intro ,end=' ')
+# names=['arun','kushal','varun']
+# with open('z2.txt','w') as intro:
+#     for name in names:
+#         print(name,file=intro ,end=' ')
 
 #APPEND
 #IF WE WANT TO ADD NEW DATA IN THE PLACE OF REPLACING THEN WE USE APPEND
@@ -37,6 +37,6 @@ with open('z2.txt','w') as intro:
 #     name_file.write(" is arun sharma")
 
 #WRITE DATA OTHER THAN STRING 
-# x=10
-# new=open("z1.txt",'a')
-# print(str(x),file=new)
+x=666
+new=open("z1.txt",'a')
+print(str(x),file=new)

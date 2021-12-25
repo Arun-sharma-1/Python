@@ -12,7 +12,7 @@
 
 
 # READING DATA
-arun = open("z3.txt", 'r')
+# arun = open("z3.txt", 'r')
 # print(arun.readline())      #give top line
 # print(arun.readline())      #give 2nd line
 # print(arun.readline())      #give 3ed line
@@ -47,8 +47,9 @@ arun = open("z3.txt", 'r')
 
 
 # HOW TO PRINT SINGLE LINE THAT CONTAIN SPECIAL STRING(name it )
-# for i in arun:
-#     if "B.TECH" in i.upper():
-#     # if "sharma" in i.lower():
-#      print(i,end="")
-# arun.close()
+with open("z3.txt",'r') as arun:
+    for i in arun:
+      if "B.TECH" in i.upper():
+    # if "sharma" in i.lower():
+         print(i,end="")
+arun.close()
